@@ -1,0 +1,159 @@
+/* ---------- GLOBAL ---------- */
+:root {
+  --bg: #f0f4ff;
+  --text: #222;
+  --card: #ffffff;
+  --accent: #0057ff;
+  --accent-dark: #003d99;
+}
+
+body.dark {
+  --bg: #0f0f0f;
+  --text: #e6e6e6;
+  --card: #1a1a1a;
+  --accent: #3399ff;
+  --accent-dark: #1a75d1;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode button */
+#themeToggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 8px 12px;
+  background: white;
+  color: var(--accent-dark);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#themeToggle:hover {
+  background: #ddd;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  max-width: 1100px;
+  margin: 25px auto;
+  background: var(--card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: var(--accent-dark);
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+/* ---------- TRAINEE CARDS ---------- */
+.trainee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.trainee-card {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.trainee-card:hover {
+  transform: translateY(-5px);
+}
+
+.trainee-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ---------- JOB ROLES ---------- */
+.job-role {
+  background: var(--card);
+  padding: 20px;
+  border-left: 6px solid var(--accent);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* ---------- COURSES ---------- */
+.course-item {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- FORM ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea {
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background: var(--card);
+  color: var(--text);
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent-dark);
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}

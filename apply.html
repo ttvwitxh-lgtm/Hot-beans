@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Beans Web - Apply</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hot Beans Web</h1>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="trainees.html">Trainees</a>
+      <a href="jobs.html">Job Roles</a>
+      <a href="apply.html">Apply</a>
+      <a href="courses.html">Courses</a>
+    </nav>
+      <button id="themeToggle">Dark Mode</button>
+
+  </header>
+
+
+
+  <main>
+    <h2>Apply for a Trainee Role</h2>
+    <p>Please fill in the form below to apply.</p>
+
+    <form id="applicationForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email">
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone">
+
+      <label for="role">Preferred Role</label>
+      <select id="role" name="role">
+        <option value="">Select a role</option>
+        <option value="frontend">Trainee Front-End Developer</option>
+        <option value="fullstack">Trainee Full-Stack Developer</option>
+        <option value="uxui">Trainee UX / UI Designer</option>
+      </select>
+
+      <label for="cv">CV (link or short description)</label>
+      <textarea id="cv" name="cv"></textarea>
+
+      <button type="submit">Submit Application</button>
+      <p id="formMessage"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hot Beans Web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<button id="themeToggle">Dark Mode</button>
+
